@@ -1,8 +1,0 @@
-<?php
-
-$host = "localhost";
-$username = "root";
-$host_pass = "";
-$dbname = "socmed_Daroyy";
-
-$con = new mysqli($host, $username, $host_pass, $dbname);
