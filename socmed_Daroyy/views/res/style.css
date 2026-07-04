@@ -1,0 +1,223 @@
+body{
+    background: linear-gradient(-45deg,#050816,#0b1120,#1a1a40,#240046,#3c096c,#00f5ff);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+.registration_form{
+    background-color: rgba(20,20,40,0.92);
+    width: 30%;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgb(0,255,255),
+                0 0 40px rgba(140,0,255,0.5);
+    backdrop-filter: blur(10px);
+}
+
+input{
+    width: 96%;
+    margin: .5em auto;
+    margin-top: .1em;
+    padding: .6em .4em;
+    border: 1px solid rgb(0,255,255);
+    background: rgba(15,15,35,0.8);
+    color: white;
+    border-radius: 8px;
+    outline-color: rgb(255,0,255);
+    transition: .3s ease;
+}
+
+input:focus{
+    border-color: rgb(255,0,255);
+    box-shadow: 0 0 12px rgb(255,0,255);
+}
+
+label{
+    color: rgb(220,240,255);
+    font-size: .85em;
+    font-weight:600;
+}
+
+input[type='submit']{
+    width: 99%;
+    background: linear-gradient(90deg,
+        rgb(0,255,255),
+        rgb(0,140,255),
+        rgb(162,0,255));
+    border:none;
+    padding: 1em 0em;
+    color:white;
+    font-weight:bold;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s ease;
+}
+
+input[type='submit']:hover{
+    transform: scale(1.03);
+    box-shadow:0 0 20px rgb(0,255,255),
+               0 0 35px rgb(162,0,255);
+}
+
+.navbar{
+    background: rgba(15,15,35,0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color:white;
+    box-shadow:0 0 20px rgba(0,255,255,0.4);
+}
+
+.left-list,
+.right-list{
+    margin: 0;
+    padding: 0;
+}
+
+.left-list li{
+    list-style: none;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.right-list{
+    display: flex;
+    gap: 15px;
+}
+
+.right-list li{
+    list-style: none;
+}
+
+.right-list a{
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: .3s ease;
+}
+
+.right-list a:hover{
+    background: rgba(0,255,255,0.15);
+    color: rgb(0,255,255);
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.logo{
+    background-image: url('minion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display:inline-block;
+    vertical-align: middle;
+    border:2px solid rgb(0,255,255);
+    box-shadow:0 0 10px rgb(0,255,255);
+}
+
+.container{
+    background-color: rgba(15,15,35,0.94);
+    width: 90%;
+    min-height: 40vh;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow:0 0 25px rgba(0,255,255,0.3);
+}
+
+.banner{
+    background-image: url('minions.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    position: relative;
+    height: 22vh;
+    width: 100%;
+    color: white;
+}
+
+.profile_pic{
+    position: relative;
+    z-index: 200;
+    width: 20vh;
+    height: 20vh;
+    background-image: url('minion.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    left: 10vh;
+    top: 5vh;
+    border:3px solid rgb(0,255,255);
+    box-shadow:0 0 20px rgb(0,255,255);
+}
+
+.container h2{
+    margin:0;
+    position: relative;
+    top:15vh;
+    left:32vh;
+    font-size:2em;
+    color:rgb(0,255,255);
+    text-shadow:0 0 10px rgb(0,255,255);
+}
+
+.title{
+    text-align:center;
+    color:rgb(255,0,255);
+    border-bottom:1px solid rgb(0,255,255);
+    padding:1em;
+    font-weight:bold;
+}
+
+.alert{
+    color:rgb(255,80,120);
+    text-align:center;
+    font-size:.85em;
+    font-weight:bold;
+}
+
+.post-container{
+    width:75%;
+    margin:auto;
+    margin-top:8vh;
+    padding:5vh;
+}
+
+#post_area{
+    width:100%;
+    resize:none;
+    border-radius:15px;
+    box-sizing:border-box;
+    padding:15px;
+    height:5em;
+    background:rgba(20,20,40,0.9);
+    color:white;
+    border:1px solid rgb(0,255,255);
+}
+
+.post{
+    padding:1em;
+    margin:.25em auto;
+    border:.01em solid rgb(0,255,255);
+    border-radius:15px;
+    color:rgb(0,255,255);
+    background:rgba(0,255,255,0.08);
+    box-shadow:0 0 15px rgba(0,255,255,0.25);
+}
